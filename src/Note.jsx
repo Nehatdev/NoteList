@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './App.css'; // Import your main CSS file for general styles
+import './App.css'; 
 import axios from 'axios';
 import { toast } from 'react-toastify';
 import { Card, Button } from 'react-bootstrap';
@@ -82,7 +82,8 @@ export const Note = () => {
                 </div>
             </form>
             
-            {Array.isArray(userNotes) && userNotes.map(note => (
+            {Array.isArray(userNotes) && 
+            userNotes.map(note => (
                 <Card key={note._id} className="note-card">
                     <Card.Body>
                         <Card.Title><strong>Title:</strong>{note.title}</Card.Title>
